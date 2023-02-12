@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  gestionesagre-auth:
+    container_name: autenticazione
+    restart: always
+    build:
+      context: .
+      dockerfile: src/GestioneSagre.Autenticazione/Dockerfile
+    #ports:
+    #  - 8052:5001
+    networks:
+      - lan-network
+
+networks:
+  lan-network:
+    external:
+      name: docker-net

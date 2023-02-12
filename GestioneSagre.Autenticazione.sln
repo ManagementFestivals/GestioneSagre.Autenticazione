@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestioneSagre.Autenticazione", "src\GestioneSagre.Autenticazione\GestioneSagre.Autenticazione.csproj", "{1F97A163-DA4F-43F8-9992-8D8A3C97DA61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementi di soluzione", "Elementi di soluzione", "{F38176C5-D7FC-472C-9049-8459D835B16E}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestioneSagre.Autenticazione.Shared", "src\GestioneSagre.Autenticazione.Shared\GestioneSagre.Autenticazione.Shared.csproj", "{5207E7AA-A631-44EC-A930-FACE6BB3B917}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestioneSagre.Autenticazione.DataAccessLayer", "src\GestioneSagre.Autenticazione.DataAccessLayer\GestioneSagre.Autenticazione.DataAccessLayer.csproj", "{39AD2E76-72BD-49B1-BE58-4653018C6B92}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestioneSagre.Autenticazione.BusinessLayer", "src\GestioneSagre.Autenticazione.BusinessLayer\GestioneSagre.Autenticazione.BusinessLayer.csproj", "{3F892731-8EA2-4889-996D-0A7DBA0583ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestioneSagre.Autenticazione.Migrations", "src\GestioneSagre.Autenticazione.Migrations\GestioneSagre.Autenticazione.Migrations.csproj", "{F41A48D1-C9AD-4987-AB3E-7AF2919BFD1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F97A163-DA4F-43F8-9992-8D8A3C97DA61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F97A163-DA4F-43F8-9992-8D8A3C97DA61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F97A163-DA4F-43F8-9992-8D8A3C97DA61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F97A163-DA4F-43F8-9992-8D8A3C97DA61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5207E7AA-A631-44EC-A930-FACE6BB3B917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5207E7AA-A631-44EC-A930-FACE6BB3B917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5207E7AA-A631-44EC-A930-FACE6BB3B917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5207E7AA-A631-44EC-A930-FACE6BB3B917}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39AD2E76-72BD-49B1-BE58-4653018C6B92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39AD2E76-72BD-49B1-BE58-4653018C6B92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39AD2E76-72BD-49B1-BE58-4653018C6B92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39AD2E76-72BD-49B1-BE58-4653018C6B92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F892731-8EA2-4889-996D-0A7DBA0583ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F892731-8EA2-4889-996D-0A7DBA0583ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F892731-8EA2-4889-996D-0A7DBA0583ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F892731-8EA2-4889-996D-0A7DBA0583ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F41A48D1-C9AD-4987-AB3E-7AF2919BFD1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F41A48D1-C9AD-4987-AB3E-7AF2919BFD1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F41A48D1-C9AD-4987-AB3E-7AF2919BFD1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F41A48D1-C9AD-4987-AB3E-7AF2919BFD1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70CB7090-81E9-41AF-A9B7-AB80B645AE21}
+	EndGlobalSection
+EndGlobal
