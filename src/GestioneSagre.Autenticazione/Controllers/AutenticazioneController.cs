@@ -45,17 +45,17 @@ public class AutenticazioneController : BaseController
         return BadRequest();
     }
 
-    //[AllowAnonymous]
-    //[HttpPost("register")]
-    //public async Task<IActionResult> RegisterAsync(RegisterRequest request)
-    //{
-    //    var response = await identityService.RegisterAsync(request);
+    [AllowAnonymous]
+    [HttpPost("register")]
+    public async Task<IActionResult> RegisterAsync(RegisterRequest request)
+    {
+        var response = await identityService.RegisterAsync(request);
 
-    //    if (response.Succeeded)
-    //    {
-    //        return Ok(response);
-    //    }
+        if (response.Succeeded)
+        {
+            return Ok(response);
+        }
 
-    //    return BadRequest(response);
-    //}
+        return BadRequest(response);
+    }
 }
