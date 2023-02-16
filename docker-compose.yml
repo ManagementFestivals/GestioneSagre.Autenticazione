@@ -1,8 +1,8 @@
 version: '3.7'
 
 services:
-  gestionesagre-auth:
-    container_name: autenticazione
+  autenticazione:
+    container_name: api-auth
     restart: always
     build:
       context: .
