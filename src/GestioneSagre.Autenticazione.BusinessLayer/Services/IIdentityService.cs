@@ -1,4 +1,4 @@
-﻿using GestioneSagre.Autenticazione.Shared.Models;
+﻿using GestioneSagre.SharedKernel.Models.Auth;
 
 namespace GestioneSagre.Autenticazione.BusinessLayer.Services;
 

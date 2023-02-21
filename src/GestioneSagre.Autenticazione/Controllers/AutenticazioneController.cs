@@ -1,6 +1,6 @@
 ﻿using GestioneSagre.Autenticazione.BusinessLayer.Services;
 using GestioneSagre.Autenticazione.Controllers.Common;
-using GestioneSagre.Autenticazione.Shared.Models;
+using GestioneSagre.SharedKernel.Models.Auth;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

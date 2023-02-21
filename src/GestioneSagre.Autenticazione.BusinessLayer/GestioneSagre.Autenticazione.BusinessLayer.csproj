@@ -14,7 +14,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GestioneSagre.Autenticazione.DataAccessLayer\GestioneSagre.Autenticazione.DataAccessLayer.csproj" />
-    <ProjectReference Include="..\GestioneSagre.Autenticazione.Shared\GestioneSagre.Autenticazione.Shared.csproj" />
   </ItemGroup>
 
 </Project>

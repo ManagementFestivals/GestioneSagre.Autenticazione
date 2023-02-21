@@ -6,7 +6,7 @@ using GestioneSagre.Autenticazione.BusinessLayer.Authentication;
 using GestioneSagre.Autenticazione.BusinessLayer.Extensions;
 using GestioneSagre.Autenticazione.BusinessLayer.Options;
 using GestioneSagre.Autenticazione.DataAccessLayer.Entities;
-using GestioneSagre.Autenticazione.Shared.Models;
+using GestioneSagre.SharedKernel.Models.Auth;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
