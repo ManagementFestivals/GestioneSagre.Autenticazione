@@ -19,9 +19,12 @@ namespace GestioneSagre.Autenticazione;
 
 public class Startup
 {
-    public Startup(IConfiguration configuration)
+    private readonly IWebHostEnvironment env;
+
+    public Startup(IConfiguration configuration, IWebHostEnvironment env)
     {
         Configuration = configuration;
+        this.env = env;
     }
 
     public IConfiguration Configuration { get; }
@@ -77,7 +80,16 @@ public class Startup
 
         services.AddDbContextPool<AuthDbContext>(optionsBuilder =>
         {
-            var connectionString = Configuration.GetSection("ConnectionStrings").GetValue<string>("Default");
+            var connectionString = string.Empty;
+
+            if (env.IsDevelopment())
+            {
+                connectionString = Configuration.GetSection("ConnectionStrings").GetValue<string>("Default");
+            }
+            else
+            {
+                connectionString = Configuration.GetSection("ConnectionStrings").GetValue<string>("Docker");
+            }
 
             optionsBuilder.UseSqlServer(connectionString, options =>
             {
@@ -167,11 +179,8 @@ public class Startup
         services.Configure<AdminOptions>(Configuration.GetSection("AdminSettings"));
     }
 
-    public void Configure(WebApplication app)
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
-        IWebHostEnvironment env = app.Environment;
-
-        //app.UseHttpsRedirection();
         app.UseCors("GestioneSagre.Autenticazione");
 
         app.UseSwagger();
